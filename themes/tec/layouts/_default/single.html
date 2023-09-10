@@ -1,0 +1,10 @@
+{{ define "main" }}
+<p>
+<a href="{{ $.Site.BaseURL }}">Home</a>
+</p>
+
+<h1>{{ .Title }}</h1>
+{{ partial "metadata.html" . }}
+<br><br>
+{{ .Content }}
+{{ end }}
