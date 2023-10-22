@@ -27,3 +27,6 @@ func main() {
 echo $PATH
 ```
 
+# refer
+
+- https://katex.org/docs/support_table.html

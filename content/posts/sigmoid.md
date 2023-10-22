@@ -4,7 +4,9 @@ date: 2023-10-19T18:39:30+08:00
 draft: false
 ---
 
-Sigmoid is often used in machine learning and neural networks. It converts any input into a probability between 0 and 1, which makes it very useful for binary classification tasks. The sigmoid function is defined as:
+Sigmoid is often used as *Activation function* in an *artificial neural network*. As a nonlinear function, it transforms any input value into a range between 0 and 1.
+
+The mathematical expression of sigmoid function is defined as below:
 
 $$
 \begin{align*}
@@ -12,7 +14,7 @@ $$
 \end{align*}
 $$
 
-Derivative
+Its derivative is $f'(x) = f(x)(1-f(x))$, which can be derived as follow:
 
 $$
 \begin{align*}
@@ -30,7 +32,7 @@ f'(x) &= (\frac{1}{1 + e^{-x}})' \newline
 \end{align*}
 $$
 
-pytorch
+Example of using sigmoid function in PyTorch
 
 ```python
 import torch
@@ -46,7 +48,7 @@ tensor([[0.7311, 0.8808],
         [0.9933, 0.9975]])
 ```
 
-python math
+We can also implement the sigmoid function in Python using the `math` library
 
 ```python
 import math
