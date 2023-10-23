@@ -116,7 +116,7 @@ F.conv2d(input, weight, groups=1, stride=1, bias=bias)
 Calculate the output data shape
 
 ```
-[(W−K+2P)/S]+1
+[(W-K+2P)/S]+1
 ```
 - W: input size
 - K: Filter (kernel) size
