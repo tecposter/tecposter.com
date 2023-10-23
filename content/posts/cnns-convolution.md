@@ -131,3 +131,4 @@ Read more:
 - https://saturncloud.io/blog/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way/
 - https://towardsdatascience.com/covolutional-neural-network-cb0883dd6529
 - https://stackoverflow.com/questions/53580088/calculate-the-output-size-in-convolution-layer
+- https://training.galaxyproject.org/training-material/topics/statistics/tutorials/CNN/tutorial.html
