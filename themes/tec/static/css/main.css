@@ -1,13 +1,16 @@
 #content {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   margin: 50px auto;
   max-width: 960px;
+  line-height: 28px;
 }
 
 pre {
   padding: 7px 12px;
   border-radius: 7px;
+  line-height: 21px;
 }
 
 ul li {
-  line-height: 2;
+  line-height: 35px;
 }
