@@ -7,3 +7,7 @@ pre {
   padding: 7px 12px;
   border-radius: 7px;
 }
+
+ul li {
+  line-height: 2;
+}

@@ -1,11 +1,8 @@
 ---
-title: "Cnns Convolution"
+title: "CNNs Convolution"
 date: 2023-10-22T22:08:59+08:00
 draft: false
 ---
-
-# CNNs - Convolution
-
 
 Convolutions are performed between filters (known as convolutional kernels) and input data. Filters (or kernels) and input data can be represented as matrices. 
 
