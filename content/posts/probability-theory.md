@@ -10,8 +10,8 @@ draft: false
   - probability distribution for random variable X
   - probability density function for X
   - expectation and variance of X
-- $P(sure envent) = 1$
-- $P(impossible event) = 0$
+- $P(\text{sure event}) = 1$
+- $P(\text{impossible event}) = 0$
 - $P(A) + P(\neg{A}) = 1$, complementary events
 - $P(A \vee B) = P(A) + P(B) - P(A \wedge B)$ 
   - A, B are exclusive events: $P(A \wedge B) = 0 \implies P(A \vee B) = P(A) + P(B)$
