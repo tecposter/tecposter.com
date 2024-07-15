@@ -1,7 +1,6 @@
 ---
-title: "Sigmoid"
-date: 2023-10-19T18:39:30+08:00
-draft: false
+date: 2024-07-14T02:18:02.206672799Z
+title: Sigmoid
 ---
 
 Sigmoid is often used as *Activation function* in an *artificial neural network*. As a nonlinear function, it transforms any input value into a range between 0 and 1.

@@ -1,8 +1,8 @@
 <script type="module">
-import katex from 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.mjs';
-import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.mjs";
+  import katex from 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.mjs';
+  import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.mjs";
 
-// document.addEventListener("DOMContentLoaded", function() {
+  // document.addEventListener("DOMContentLoaded", function() {
   renderMathInElement(document.body, {
     // customised options
     // • auto-render specific keys, e.g.:
@@ -13,7 +13,7 @@ import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/
       {left: '\\[', right: '\\]', display: true},
     ],
     // • rendering keys, e.g.:
-    throwOnError : false
+    throwOnError: false
   });
   const macros = {};
   document.querySelectorAll(".language-mathd").forEach(element => {
@@ -34,16 +34,24 @@ import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/
 </script>
 
 <script type="module">
-// https://mermaid.js.org/config/usage.html
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-(async () => {
-  var config = {
-    startOnLoad: false,
-    theme: 'neutral',
-    align: 'center',
-  };
-  mermaid.initialize(config);
-  await mermaid.run({querySelector: '.language-mermaid'})
-  // console.log(mermaid);
-})();
+  // https://mermaid.js.org/config/usage.html
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  (async () => {
+    var config = {
+      startOnLoad: false,
+      theme: 'neutral',
+      align: 'center',
+    };
+    mermaid.initialize(config);
+    await mermaid.run({querySelector: '.language-mermaid'})
+    // console.log(mermaid);
+  })();
 </script>
+
+<div id="footer">
+  © 2024 TecPoster
+  <a href="https://github.com/tecposter/" target="_blank"><i class="iconfont icon-GitHub"></i></a>
+  <a href="https://www.linkedin.com/in/zhanjh/" target="_blank"><i class="iconfont icon-linkedin"></i></a>
+  <a href="https://www.facebook.com/zhanjh" target="_blank"><i class="iconfont icon-facebook-fill"></i></a>
+  <a href="https://x.com/anthony_zhan" target="_blank"><i class="iconfont icon-tuite"></i></a>
+</div>

@@ -1,16 +1,112 @@
-#content {
+body {
   font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
-  margin: 50px auto;
-  max-width: 960px;
-  line-height: 28px;
+  background-color: #161718;
+  color: #c5d1de;
 }
 
 pre {
   padding: 7px 12px;
   border-radius: 7px;
   line-height: 21px;
+
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 ul li {
   line-height: 35px;
+}
+
+a {
+  color: #539bf5;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  line-height: 1.5;
+  border-bottom: 1px solid #313639;
+}
+
+h2 {
+  line-height: 1.2;
+  border-bottom: 1px dashed #313639;
+}
+
+#content {
+  margin: 50px auto;
+  max-width: 960px;
+  min-height: 83vh;
+  line-height: 28px;
+}
+
+#top-bar {
+  padding: 3px 7px;
+  border-bottom: 1px solid #333;
+}
+
+#footer {
+  margin: 50px auto;
+  max-width: 960px;
+  color: #b4a0cd;
+  font-size: 85%;
+}
+
+#footer a {
+  color: #b4a0cd;
+  text-decoration-line: none;
+  margin: 0 12px;
+}
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 227141 */
+  src: url('iconfont.woff2?t=1721038347657') format('woff2'),
+    url('iconfont.woff?t=1721038347657') format('woff'),
+    url('iconfont.ttf?t=1721038347657') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tuite:before {
+  content: "\e600";
+}
+
+.icon-GitHub:before {
+  content: "\ea0a";
+}
+
+.icon-facebook-fill:before {
+  content: "\e88d";
+}
+
+.icon-linkedin:before {
+  content: "\e60b";
+}
+
+.icon-close:before {
+  content: "\e659";
+}
+
+.icon-menu:before {
+  content: "\e701";
+}
+
+.icon-code:before {
+  content: "\e682";
+}
+
+.icon-edit:before {
+  content: "\e614";
+}
+
+.icon-new:before {
+  content: "\e615";
 }
