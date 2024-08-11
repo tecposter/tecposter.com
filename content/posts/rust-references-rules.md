@@ -1,6 +1,6 @@
 ---
-title: Rust References Rules
 date: 2024-07-14T01:12:00.180000981Z
+title: Rust References Rules
 ---
 
 References Rules / Borrowing Rules

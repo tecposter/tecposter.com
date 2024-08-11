@@ -1,6 +1,6 @@
 ---
-title: Heap sort
 date: 2024-07-13T13:46:22.046695155Z
+title: Heap sort
 ---
 Heap sort is a comparison-based sorting by using max-heap or min-heap.
 

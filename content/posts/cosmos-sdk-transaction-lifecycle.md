@@ -1,6 +1,6 @@
 ---
-title: Cosmos SDK Transaction Lifecycle
 date: 2024-07-13T04:40:15.636668719Z
+title: Cosmos SDK Transaction Lifecycle
 ---
 
 In this article, we\'ll majorly talk about the transaction lifecycle and

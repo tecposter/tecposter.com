@@ -1,6 +1,6 @@
 ---
-title: Arch Linux Clean the System
 date: 2024-07-13T13:24:19.900026738Z
+title: Arch Linux Clean the System
 ---
 In this article, we\'re going to learn how to
 
