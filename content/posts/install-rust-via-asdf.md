@@ -1,7 +1,8 @@
 ---
-date: 2024-08-11T08:02:49.466669307Z
+date: 2024-08-11T14:03:58.600002167Z
 title: Install Rust via asdf
 ---
+# Install
 
 [asdf](/posts/asdf/) install [rust](/posts/rust/) latest
 
@@ -84,6 +85,8 @@ rust 1.80.0
 rust 1.80.1
 ```
 
+# rust-analyzer
+
 [Rust](/posts/rust/) add component `rust-analyzer`
 ```shell
 ❯ rustup component add rust-analyzer
@@ -97,3 +100,13 @@ rust 1.79.0
 rust 1.80.0
 rust 1.80.1
 ```
+
+
+# Environment variables
+
+-   `RUSTUP_DIST_SERVER` (default:https://static.rust-lang.org) Sets the root URL for downloading static resources related to Rust. You can change this to instead use a local mirror, or to test the binaries from the staging directory.
+-   `RUSTUP_DIST_ROOT`  (default: https://static.rust-lang.org/dist) Deprecated. Use `RUSTUP_DIST_SERVER` instead.
+-   `RUSTUP_UPDATE_ROOT` (default: https://static.rust-lang.org/rustup) Sets the root URL for downloading self-updates.
+
+Read more on rust [Environment variables](https://rust-lang.github.io/rustup/environment-variables.html)
+
