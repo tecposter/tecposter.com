@@ -1,5 +1,5 @@
 ---
-date: 2024-08-25T14:23:44.019811147Z
+date: 2024-08-31T03:13:27.433289731Z
 title: Elliptic Curve Cryptography
 ---
 # Elliptic Curve
@@ -103,4 +103,7 @@ $$
 \{ (x,y) \in \Bbb{F}_p^2 \mid y^2 \equiv x^3 + ax + b \mod p, 4a^3 + 27b^2 \not\equiv 0 \mod 0 \} \cup \mathcal{O}
 $$
 where $\mathcal{O}$ is still the point at $\infty$, $a$ and $b$ are two integers in $\Bbb{F}_p$, and $char(\Bbb{F}_p)=p \neq 2,3$
+
+
+
 

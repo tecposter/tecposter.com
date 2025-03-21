@@ -1,5 +1,5 @@
 ---
-date: 2024-08-11T13:43:07.276667127Z
+date: 2024-09-14T07:31:25.476573625Z
 title: TecPoster
 ---
 [TecPoster.com](https://github.com/tecposter/tecposter.com) is built on the top of [Hugo](https://gohugo.io/) and all of its posts are exported from markdown documents in [Obsidian](https://obsidian.md/) by using the [TecExp](https://github.com/tecposter/tecexp).

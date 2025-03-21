@@ -1,50 +1,32 @@
 ---
-date: 2024-07-13T04:40:15.636668719Z
+date: 2024-08-31T07:20:56.409809404Z
 title: Cosmos SDK Transaction Lifecycle
 ---
 
-In this article, we\'ll majorly talk about the transaction lifecycle and
-try to explain how the nodes create, transfer, validate and commit
-transactions in the Cosmos SDK based blockchain.
+In this article, we'll majorly talk about the transaction lifecycle and try to explain how the nodes create, transfer, validate and commit transactions in the Cosmos SDK based blockchain.
 
 # Blockchain Node Basic structure
 
-First let\'s look at the basic structure of the [Blockchain](/posts/blockchain/) node. The
-cosmos-sdk-based blockchain node consists of two parts, one part is
-state-machine as an application layer, and the other part is Terndermint
-core which contains a consensus layer and a networking layer. While
-these two parts connect through the Application Blockchain Interface
-(ABCI).
+First let's look at the basic structure of the [Blockchain](/posts/blockchain/) node. The cosmos-sdk-based blockchain node consists of two parts, one part is state-machine as an application layer, and the other part is Terndermint core which contains a consensus layer and a networking layer. While these two parts connect through the Application Blockchain Interface (ABCI).
 
 ![20220401-132218_screenshot.png](/assets/20220401-132218_screenshot.png)
 ## State-machine
 
-A state machine is a machine that has multiple states, but only one
-state at any given time. While transactions trigger the state
-transitions. For example, by given a state `S`{.verbatim} and a
-transaction `T`{.verbatim}, then the state machine returns a new state
-`S'`{.verbatim} (S prime).
+A state machine is a machine that has multiple states, but only one  state at any given time. While transactions trigger the state transitions. For example, by given a state `S`{.verbatim} and a transaction `T`{.verbatim}, then the state machine returns a new state `S'`{.verbatim} (S prime).
 
 ![20220328-233638_screenshot.png](/assets/20220328-233638_screenshot.png)
 
-In practice, the transactions are bundled in blocks to make the process
-more efficient.
+In practice, the transactions are bundled in blocks to make the process more efficient.
 
 ![20220328-235126_screenshot.png](/assets/20220328-235126_screenshot.png)
 
-In a blockchain context, a note participates in the network, initializes
-its state machine, connects with other nodes and updates its state
-machine as new blocks come in.
+In a blockchain context, a note participates in the network, initializes its state machine, connects with other nodes and updates its state machine as new blocks come in.
 
-So at its core, a blockchain is a replicated deterministic state
-machine. It means that if a node is started at a given state and replays
-the same sequence of transactions, it will always end up with the same
-final state.
+So at its core, a blockchain is a replicated deterministic state machine. It means that if a node is started at a given state and replays the same sequence of transactions, it will always end up with the same final state.
 
 ### Transaction
 
-In Cosmos SDK-based blockchain each transaction contains different types
-of messages. Here is an example of a transaction with several messages.
+In Cosmos SDK-based blockchain each transaction contains different types of messages. Here is an example of a transaction with several messages.
 
 ``` javascript
 {
@@ -105,25 +87,19 @@ And here is the content of Msg \"MsgSend\".
 
 1.  Decode
 
-    In blockchain node, the application (state manche) receives a
-    transaction from the underlying tendermint core, the transaction is
-    still in its **encoded byte** form and needs to be unmarshaled to be
-    processed.
+    In blockchain node, the application (state manche) receives a transaction from the underlying tendermint core, the transaction is still in its **encoded byte** form and needs to be unmarshaled to be processed.
 
 2.  Extract Messages
 
-    After decoding, the application extracts messages from the
-    transaction.
+    After decoding, the application extracts messages from the transaction.
 
 3.  Route
 
-    The \"Msg Service Router\" routes each message to a differnt
-    application module.
+    The \"Msg Service Router\" routes each message to a different application module.
 
 4.  Perform a state transition
 
-    In the module, the \"msgServer\" handles the message to use a keeper
-    to access the state store then perform the state transitions.
+    In the module, the \"msgServer\" handles the message to use a keeper to access the state store then perform the state transitions.
 
 ## Tendermint Core
 
